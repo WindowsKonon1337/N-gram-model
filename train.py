@@ -32,7 +32,7 @@ class NGramModel(object):
 
     def __load_train_data(self, input_dir: str = None) -> list:
         sample = ''
-        if input_dir != None:
+        if input_dir is not None:
             with open(input_dir, 'r', encoding='utf-8') as train_file:
                 sample = train_file.read()
         else:
