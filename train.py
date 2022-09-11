@@ -101,9 +101,10 @@ class NGramModel(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--input_dir', type=str, help = 'путь к директории, в которой лежит коллекция документов. Если данный\
-        аргумент не задан, считать, что тексты вводятся из stdin.')
-    parser.add_argument('--model', type=str, help = 'путь к файлу, в который сохраняется модель.')
+    parser.add_argument('--input_dir', type=str, help='путь к директории, в которой лежит коллекция документов. '
+                                                      'Если данный аргумент не задан, считать, что тексты вводятся из '
+                                                      'stdin.')
+    parser.add_argument('--model', type=str, help='путь к файлу, в который сохраняется модель.')
 
     args = parser.parse_args()
 
