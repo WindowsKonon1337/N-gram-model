@@ -13,3 +13,4 @@ model = NGramModel()
 model.load_model(args.model)
 
 print(model.generate(args.length, args.prefix))
+
