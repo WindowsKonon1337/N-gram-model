@@ -1,4 +1,4 @@
-from train import N_gram_model, argparse
+from train import NGramModel, argparse
 
 parser = argparse.ArgumentParser()
 
@@ -8,7 +8,7 @@ parser.add_argument('--length', type=int, help = 'длина генерируе�
 
 args = parser.parse_args()
 
-model = N_gram_model()
+model = NGramModel()
 
 model.load_model(args.model)
 
