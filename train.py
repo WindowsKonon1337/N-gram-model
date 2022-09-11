@@ -10,7 +10,7 @@ import pickle
 import argparse
 
 
-class N_gram_model(object):
+class NGramModel(object):
 
     def __init__(self, n: int = 2):
         self.n = n
@@ -113,7 +113,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    model = N_gram_model()
+    model = NGramModel()
 
     if args.input_dir is not None:
         model.fit(args.input_dir)
